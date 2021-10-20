@@ -1,0 +1,583 @@
+/* iCheck plugin Square skin, black
+----------------------------------- */
+
+.icheckbox_square,
+.iradio_square {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url(../images/square.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_square {
+    background-position: 0 0;
+    float: right;
+}
+
+.icheckbox_square.hover {
+    background-position: -24px 0;
+}
+
+.icheckbox_square.checked {
+    background-position: -48px 0;
+}
+
+.icheckbox_square.disabled {
+    background-position: -72px 0;
+    cursor: default;
+}
+
+.icheckbox_square.checked.disabled {
+    background-position: -96px 0;
+}
+
+.iradio_square {
+    background-position: -120px 0;
+}
+
+.iradio_square.hover {
+    background-position: -144px 0;
+}
+
+.iradio_square.checked {
+    background-position: -168px 0;
+}
+
+.iradio_square.disabled {
+    background-position: -192px 0;
+    cursor: default;
+}
+
+.iradio_square.checked.disabled {
+    background-position: -216px 0;
+}
+
+
+/* Retina support */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_square,
+    .iradio_square {
+        background-image: url(../images/square@2x.png);
+        -webkit-background-size: 240px 24px;
+        background-size: 240px 24px;
+    }
+}
+
+
+/* Application Styles */
+
+.main-section {
+    height: 75px;
+    border: 1px solid;
+    padding: 0px !important;
+}
+
+.seach-mdiv {
+    height: 100%;
+    border: 1px solid;
+    padding: 0px !important;
+    float: left;
+}
+
+.seach-div {
+    float: left;
+    height: 100%;
+    margin-left: -40px;
+    width: 100%;
+}
+
+.search-li {
+    background: #a6a6a6;
+    border-radius: 50%;
+    width: 25px;
+    float: right;
+    margin-top: 25px;
+    color: #ffffff;
+}
+
+.fol-mspan {
+    float: left;
+    color: #000000;
+    margin-left: 19px;
+    font-size: 26px;
+}
+
+.folder-mdiv {
+    height: 100%;
+    padding: 20px 0px;
+    float: left;
+    border: 1px solid;
+    /* max-width: 34%; */
+}
+
+.folder-div {
+    width: 37%;
+    float: left;
+}
+
+.folder-mspan {
+    color: #f97b62;
+    float: left;
+    margin-left: 19px;
+    font-size: 26px;
+}
+
+.folder-span {
+    color: #000;
+    float: left;
+    margin-left: 73px;
+    font-size: 25px;
+}
+
+.fol-mdiv {
+    width: 42%;
+    float: right;
+}
+
+.fol-span {
+    color: #000000;
+    float: left;
+    margin-left: 19px;
+    font-size: 26px;
+}
+
+.fol-day {
+    font-size: 13px;
+    margin-left: 8px;
+    font-weight: 800;
+}
+
+.area-input {
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    width: 74%;
+    font-weight: 700;
+    font-family: unset;
+}
+
+.fol-span {
+    color: #000;
+    float: left;
+    margin-left: 49px;
+    font-size: 25px;
+}
+
+.cancel-mdiv {
+    height: 100%;
+    border: 1px solid;
+    padding: 0px;
+    float: left;
+}
+
+.cancel-span {
+    padding-top: 15px;
+    margin-left: -10px;
+    position: absolute;
+    font-size: 27px;
+}
+
+.cl-mdiv {
+    height: 100%;
+    float: left;
+}
+
+.cl-sdiv {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.cl-mspan {
+    font-weight: 600;
+    color: #000000;
+    float: left;
+    font-size: 19px;
+}
+
+.cl-mb {
+    font-weight: 100;
+    color: #000000;
+    font-size: 18px;
+}
+
+.cls-span {
+    float: right;
+    width: 65px;
+    height: 38px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.cl-i {
+    color: #ff1616;
+    font-size: 35px;
+    float: right;
+    margin-right: 6px;
+}
+
+.cl-tdiv {
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.cl-span {
+    float: left;
+    color: #000000;
+    font-size: 20px;
+}
+
+.cl-tdiv {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cl-div {
+    float: left;
+    width: 40%;
+}
+
+.cl-button {
+    width: 40%;
+    border: 1px solid #989898 !important;
+    border-radius: 8px !important;
+}
+
+.places-button {
+    background: #000000 !important;
+    border-radius: 10px !important;
+    color: #ffff !important;
+}
+
+.places-i {
+    color: #ff2e2e;
+    margin-right: 3px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.cat-mdiv {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cat-ul {
+    overflow: hidden;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.cat-h3 {
+    float: left;
+    font-size: 20px;
+    color: #000000;
+}
+
+.cat-div {
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.cat-sub {
+    width: auto;
+    font-size: 12px;
+    float: left;
+    color: #000000;
+}
+
+.cap-mapv {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.rating-mdiv {
+    margin-top: 39px;
+    float: left;
+}
+
+.rating-sdiv {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.rating-mspan {
+    font-weight: 600;
+    color: #000000;
+    float: left;
+    font-size: 19px;
+}
+
+.rating-mb {
+    font-weight: 100;
+    color: #000000;
+    font-size: 18px;
+}
+
+.rating-div {
+    width: auto;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.rating-b {
+    color: #000000;
+}
+
+.rating-span {
+    float: left;
+    padding: 7px;
+    cursor: pointer;
+    width: 52px;
+    color: #000000;
+    height: 38px;
+    margin-right: 21px;
+    border: 1px solid #5d5d5d;
+    border-radius: 5px;
+}
+
+.rating-span:hover {
+    float: left;
+    padding: 7px;
+    cursor: pointer;
+    width: 52px;
+    background: #c1c1c1;
+    height: 38px;
+    margin-right: 21px;
+    border: 1px solid #5d5d5d;
+    border-radius: 5px;
+}
+
+.rating-b5 {
+    color: #ffffff;
+}
+
+.rating-span5 {
+    float: left;
+    padding: 7px;
+    cursor: pointer;
+    width: 65px;
+    background-color: #000000;
+    height: 38px;
+    margin-right: 21px;
+    border: 1px solid #5d5d5d;
+    border-radius: 5px;
+}
+
+.rating-span5:hover {
+    float: left;
+    padding: 7px;
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 65px;
+    height: 38px;
+    background: #c1c1c1;
+    margin-right: 21px;
+    border: 1px solid #5d5d5d;
+    border-radius: 5px;
+}
+
+.rating-i {
+    color: #ff2e2e;
+    margin-right: 3px;
+}
+
+.map-image {
+    width: auto;
+    height: 672px;
+    border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+    .col-right {
+        width: 24% !important;
+        max-width: 24% !important;
+    }
+}
+
+
+/* Col Right Styles */
+
+.col-right {
+    float: left;
+}
+
+.cr-mdiv {
+    float: left;
+    width: 100%;
+    padding: 0px;
+}
+
+.cr-img {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.cr-sdiv {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.cr-div {
+    width: 100%;
+    float: left;
+}
+
+.cr-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    float: left;
+    width: auto;
+}
+
+.cr-span {
+    float: right;
+    margin-right: 10px;
+}
+
+.cr-p {
+    float: left;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.map-area {
+    cursor: pointer;
+    background-image: url("../images/indicator.png");
+}
+
+.close-ma {
+    cursor: pointer;
+}
+
+.active {
+    display: block !important;
+}
+
+.mlrc {
+    position: absolute !important;
+    width: 35%;
+    display: none;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ml-mdiv1 {
+    top: 36%;
+    left: 3%;
+    margin-left: 10px;
+}
+
+.ml-mdiv2 {
+    top: 4%;
+    left: 45%;
+}
+
+.ml-mdiv3 {
+    top: 38%;
+    left: 48%;
+}
+
+.ml-mdiv4 {
+    top: 26%;
+    left: 6%;
+}
+
+.ml-mdiv5 {
+    top: 20%;
+    left: 41%;
+}
+
+.ml-mdiv6 {
+    top: 45%;
+    left: 48%;
+}
+
+.ml-mdiv7 {
+    top: 13%;
+    left: 48%;
+}
+
+.ml-mdiv8 {
+    top: 17%;
+    left: 47%;
+}
+
+.ml-mdiv9 {
+    top: 26%;
+    left: 36%;
+}
+
+.ml-mdiv10 {
+    top: 36%;
+    left: 32%;
+}
+
+.ml-mdiv11 {
+    top: 36%;
+    left: 32%;
+}
+
+.ml-mdiv12 {
+    top: 37%;
+    left: 48%;
+}
+
+.ml-mdiv13 {
+    top: 31%;
+    left: 48%;
+}
+
+.ml-mdiv14 {
+    top: 31%;
+    left: 48%;
+}
+
+.ml-mdiv15 {
+    top: 4%;
+    left: 40%;
+}
+
+.ml-img {
+    width: 100%;
+    height: 110px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.ml-p {
+    float: left;
+    font-size: 10px;
+    width: auto;
+}
+
+.ml-button {
+    border-radius: 10px;
+    height: 49px;
+    width: 100%;
+    border: 1px solid;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    background: #ffffff;
+}

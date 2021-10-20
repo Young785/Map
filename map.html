@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasued E-map System</title>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/css.css" />
+
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll">
+
+    <!--  BEGIN HEADER  -->
+    <header id="header">
+
+        <!-- BEGIN MAIN SLIDER -->
+        <section id="home" class="home">
+            <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators d-flex align-items-center">
+                    <li data-target="#carouselExampleFade" data-slide-to="0" class="border-0 rounded-circle carousel-style active"></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="1" class="border-0 rounded-circle carousel-style"></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="2" class="border-0 rounded-circle carousel-style"></li>
+                </ul>
+                <!-- END SLIDE CHANGE -->
+            </div>
+        </section>
+        <!-- END MAIN SLIDER -->
+
+        <!-- BEGIN TASUED-MAP SECTION -->
+        <section id="map" class="world-map-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                        <div class="content-main text-center mt-0">
+                            <div class="content-bottom content-bottom-width">
+                                <section class="col-md-12 main-section">
+                                    <div class="col-md-7 seach-mdiv">
+                                        <div class="seach-div">
+                                            <span class="padding: 7px 10px 10px 10px;font-size: 12px;">
+                                                <i class="fa fa-search"></i>
+                                            </span>
+                                            <input type="text" class="area-input" placeholder="Type a Tasued location name to search...">
+                                            <li class="search-li suggested-span keep">
+                                                <i class="fa fa-times"></i>
+                                            </li>
+                                        </div>
+                                        <div class="suggested-mdiv keep">
+                                            <div class="suggested-div">
+                                                <a class="suggested-a" data-id="1">Auditorium</a>
+                                                <a class="suggested-a" data-id="2">School ICT</a>
+                                                <a class="suggested-a" data-id="3">Admin Building</a>
+                                                <a class="suggested-a" data-id="4">Sport Centre</a>
+                                                <a class="suggested-a" data-id="5">Library</a>
+                                                <a class="suggested-a" data-id="6">Cosit Building</a>
+                                                <a class="suggested-a" data-id="7">Cosmas Building</a>
+                                                <a class="suggested-a" data-id="8">Cosped Building</a>
+                                                <a class="suggested-a" data-id="9">Block A</a>
+                                                <a class="suggested-a" data-id="10">Mosque</a>
+                                                <a class="suggested-a" data-id="11">Block B</a>
+                                                <a class="suggested-a" data-id="12">School Gate</a>
+                                                <a class="suggested-a" data-id="13">Cohum Building</a>
+                                                <a class="suggested-a" data-id="14">Block E Building</a>
+                                                <a class="suggested-a" data-id="15">Compiter Labouratory</a>
+                                            </div>
+                                            <span class="suggested-span"><i class="fa fa-close"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 folder-mdiv">
+                                        <div class="folder-div">
+                                            <span class="folder-mspan">
+                          <i class="fa fa-file"></i>
+                        </span>
+                                            <span class="folder-span"><i class="fa fa-arrow-circle-o-down"></i></span>
+                                        </div>
+                                        <div class="fol-mdiv">
+                                            <span class="fol-mspan">
+                          <i class="fa fa-file" style="color: #76e2e2;"></i>
+                          <b class="fol-day">Today</b>
+                        </span>
+                                            <span class="fol-span">
+                          <i class="fa fa-arrow-circle-o-down"></i>
+                        </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 cancel-mdiv">
+                                        <span class="cancel-span"><i class="fa fa-times"></i></span>
+                                    </div>
+                                </section>
+                                <section class="col-md-12" style="padding-top: 30px;">
+                                    <div class="col-md-4 cl-mdiv">
+                                        <div class="cl-sdiv">
+                                            <span class="cl-mspan">Map
+                          <b class="cl-mb"> View</b>
+                        </span>
+                                            <span class="cls-span">
+                          <i class="fa fa-circle cl-i"></i>
+                        </span>
+                                        </div>
+                                        <div class="cl-tdiv">
+                                            <span class="cl-span">Category</span> </div>
+                                        <div class="cl-tdiv">
+                                            <div class="btn-group cl-div">
+                                                <button data-toggle="dropdown" class="btn btn-default places-button" type="button" aria-expanded="false">
+                                <i class="fa fa-caret-down places-i"></i> Places</button>
+                                                <ul role="menu" class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            <button type="button" class="btn btn-round btn-default cl-button">Restuarant</button>
+                                        </div>
+                                        <div class="cat-mdiv">
+                                            <ul class="cat+-ul">
+                                                <h3 class="cat-h3">COSIT</h3>
+                                                <div class="cat-div">
+                                                    <h4 class="cat-sub">Computer Science</h4>
+                                                    <div class="square single-row">
+                                                        <div class="checkbox">
+                                                            <form action="/po">
+                                                                <input type="checkbox" name="search_input" checked>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cat-div">
+                                                    <h4 class="cat-sub">Biology</h4>
+                                                    <div class="square single-row">
+                                                        <div class="checkbox">
+                                                            <form action="/po">
+                                                                <input type="checkbox" name="search_input">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </div>
+
+                                        <div class="cat-mdiv">
+                                            <ul class="cat-ul">
+                                                <h3 class="cat-h3">COSMAS</h3>
+                                                <div class="cat-div">
+                                                    <h4 class="cat-sub">Economics</h4>
+                                                    <div class="square single-row">
+                                                        <div class="checkbox">
+                                                            <form action="/po">
+                                                                <input type="checkbox" name="search_input" checked>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cat-div">
+                                                    <h4 class="cat-sub">Pol Science </h4>
+                                                    <div class="square single-row">
+                                                        <div class="checkbox">
+                                                            <form action="/po">
+                                                                <input type="checkbox" name="search_input">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        </ul>
+                                        <div class="cat-mdiv">
+                                            <ul class="cat+-ul">
+                                                <h3 class="cat-h3">COHUM</h3>
+                                                <div class="cat-div">
+                                                    <h4 class="cat-sub">Yoruba</h4>
+                                                    <div class="square single-row">
+                                                        <div class="checkbox">
+                                                            <form action="/po">
+                                                                <input type="checkbox" name="search_input" checked>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cat-div">
+                                                    <h4 class="cat-sub">English </h4>
+                                                    <div class="square single-row">
+                                                        <div class="checkbox">
+                                                            <form action="/po">
+                                                                <input type="checkbox" name="search_input">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="cat-mdiv">
+                                            <ul class="cat+-ul">
+                                                <h3 class="cat-h3">COVTED</h3>
+                                                <div class="cat-div">
+                                                    <h4 class="cat-sub">Agric</h4>
+                                                    <div class="square single-row">
+                                                        <div class="checkbox">
+                                                            <form action="/po">
+                                                                <input type="checkbox" name="search_input" checked>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cat-div">
+                                                    <h4 class="cat-sub">Bs. Edu </h4>
+                                                    <div class="square single-row">
+                                                        <div class="checkbox">
+                                                            <form action="/po">
+                                                                <input type="checkbox" name="search_input">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="cat-mdiv">
+                                            <ul class="cat+-ul">
+                                                <h3 class="cat-h3">COSPED</h3>
+                                                <div class="cat-div">
+                                                    <h4 class="cat-sub">GCP</h4>
+                                                    <div class="square single-row">
+                                                        <div class="checkbox">
+                                                            <form action="/po">
+                                                                <input type="checkbox" name="search_input" checked>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cat-div">
+                                                    <h4 class="cat-sub">Adult</h4>
+                                                    <div class="square single-row">
+                                                        <div class="checkbox">
+                                                            <form action="/po">
+                                                                <input type="checkbox" name="search_input">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="rating-mdiv">
+                                            <div class="rating-sdiv">
+                                                <span class="rating-mspan">Start
+                                    <b class="rating-mb"> Rating</b>
+                                    </span>
+                                            </div>
+                                            <div class="rating-div">
+                                                <span class="rating-span">
+                                  <b class="rating-b"> 1-2</b>
+                                  </span>
+                                                <span class="rating-span">
+                                    <b class="rating-b"> 3</b>
+                                  </span>
+                                                <span class="rating-span">
+                                    <b class="rating-b"> 4</b>
+                                  </span>
+                                                <span class="rating-span5">
+                                    <i class="fa fa-star rating-i"></i> 
+                                    <b class="rating-b5">
+                                      
+                                    5</b>
+                                  </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-md-5" style="float: left;">
+                                <img src="images/map.jpg" alt="" class="map-image" usemap="#mapLocator">
+                                <div class="mlrc ml-mdiv1" id="ml-1">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/Auditorium.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Auditorium</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Auditorium building</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv2" id="ml-2">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/ict.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">School ICT</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Information communication and technology</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv3" id="ml-3">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/admin.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Admin Building</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Administrative building</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv4" id="ml-4">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/field.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Sport Centre</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">School field</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv5" id="ml-5">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/library.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Library</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">School Library</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv6" id="ml-6">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images#d.png" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Cosit Building</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Cosit</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv7" id="ml-7">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/cosmas.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Cosmas Building</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Cosmas</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv8" id="ml-8">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/cosped.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Cosped Building</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Cosped</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv9" id="ml-9">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/blocka.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Block A Building</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Block A</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv10" id="ml-10">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images#d.png" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Mosque</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Mosque</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv11" id="ml-11">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/blockb.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Block B Building</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Block B</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv12" id="ml-12">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/gate.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">School Gate</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <!-- <p class="ml-p">Computer Science</p> -->
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv13" id="ml-13">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/Cohum.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Cohum Building</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Cohum</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv14" id="ml-14">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/blocke.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Block E Building</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Block E</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="mlrc ml-mdiv15" id="ml-15">
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/computer.jpeg" class="ml-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Compiter Labouratory</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="ml-p">Comp. lab</p>
+                                        </div>
+                                        <button class="ml-button">See Details</button>
+                                    </div>
+                                </div>
+                                <map name="mapLocator">
+                                <area shape="circle" class="map-area" coords="65, 220, 9" data-id="1" alt="">
+                                <area shape="circle" class="map-area" coords="255, 0, 9" data-id="2" alt="">
+                                <area shape="circle" class="map-area" coords="340, 250, 20" data-id="3" alt="">
+                                <area shape="rect" class="map-area" coords="115, 500, 65, 430" data-id="4" alt="">
+                                <area shape="circle" class="map-area" coords="230, 110, 9" data-id="5" alt="">
+                                <area shape="circle" class="map-area" coords="340, 280, 20" data-id="6" alt="">
+                                <area shape="circle" class="map-area" coords="340 350, 10" data-id="7" alt="">
+                                <area shape="circle" class="map-area" coords="270, 380, 10" data-id="8" alt="">
+                                <area shape="circle" class="map-area" coords="200, 440, 10" data-id="9" alt="">
+                                <area shape="circle" class="map-area" coords="185, 510, 10" data-id="10" alt="Mosque">
+                                <area shape="circle" class="map-area" coords="170, 510, 10" data-id="11" alt="Block B">
+                                <area shape="circle" class="map-area" coords="300, 515, 10" data-id="12" alt="School Gates">
+                                <area shape="circle" class="map-area" coords="330, 190, 10" data-id="13" alt="Cohum">
+                                <area shape="circle" class="map-area" coords="170, 350, 10" data-id="14" alt="Block E">
+                                <area shape="circle" class="map-area" coords="230, 320, 10" data-id="15" alt="Block E">
+                              </map>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-right">
+                                <div class="rating-sdiv">
+                                    <span class="rating-mspan">30
+                                  <b class="rating-mb">Result</b>
+                                </span>
+                                    <span>
+                                  popular first
+                                </span>
+                                </div>
+                                <div class="cr-mdiv">
+                                    <a href="#">
+                                        <img src="images/right-img.png" class="cr-img">
+                                    </a>
+                                    <div class="cr-div">
+                                        <div class="cr-div">
+                                            <h3 class="cr-h3">ICT Building</h3>
+                                            <span class="cr-span">
+                                      <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                      <b style="font-size: 11px;">50</b>
+                                    </span>
+                                        </div>
+                                        <p class="cr-p">5-10 mins</p>
+                                    </div>
+                                    <div class="cr-mdiv">
+                                        <a href="#">
+                                            <img src="images/right-img1.png" class="cr-img">
+                                        </a>
+                                        <div class="cr-div">
+                                            <div class="cr-div">
+                                                <h3 class="cr-h3">Libary Building</h3>
+                                                <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                            </div>
+                                            <p class="cr-p">5-10 mins</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cr-mdiv">
+                                    <a href="#">
+                                        <img src="images/right-img2.png" class="cr-img">
+                                    </a>
+                                    <div class="cr-div">
+                                        <div class="cr-div">
+                                            <h3 class="cr-h3">Admin Building</h3>
+                                            <span class="cr-span">
+                                        <i class="fa fa-file" style="color: #76e2e2;"></i>
+                                        <b style="font-size: 11px;">50</b>
+                                      </span>
+                                        </div>
+                                        <p class="cr-p">5-10 mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </div>
+            </div>
+            </div>
+        </section>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+        <!-- end section #world-map -->
+        <!-- END TASUED-MAP SECTION -->
+
+    </header>
+    <!--  END HEADER  -->
+
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/icheck-init.js"></script>
+    <script src="js/jquery.icheck.js"></script>
+    <!-- <script src="js/jquery.rwdImageMaps.js"></script> -->
+    <!-- <script src="js/jquery.rwdImageMaps.min.js"></script> -->
+    <script>
+        $('.map-area').on('click', function() {
+            var id = $(this).data('id');
+            // sessionStorage.setItem('mapid', id);
+            if ($('#ml-' + id).hasClass('active')) {
+                $('#ml-' + id).removeClass('active');
+            } else {
+                $('.mlrc').removeClass('active');
+                $('#ml-' + id).addClass('active')
+            }
+            // $('img[usemap]').rwdImageMaps();
+
+        });
+    </script>
+    <script>
+        $('.area-input').keypress(function(event) {
+            $('.search-li').removeClass('keep');
+            $('.suggested-mdiv').removeClass('keep');
+        });
+        $('.suggested-a').on('click', function(e) {
+            e.preventDefault();
+            var id = $(this).data('id');
+            if ($('#ml-' + id).hasClass('active')) {
+                $('#ml-' + id).removeClass('active');
+            } else {
+                $('.mlrc').removeClass('active');
+                $('#ml-' + id).addClass('active')
+            }
+        });
+        $('.suggested-span').on('click', function(e) {
+            e.preventDefault();
+            $('.suggested-mdiv').addClass('keep');
+            $('.search-li').addClass('keep');
+        });
+    </script>
+</body>
+
+</html>
